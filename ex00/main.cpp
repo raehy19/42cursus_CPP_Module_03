@@ -29,5 +29,17 @@ int main(void) {
 	clap_trap1.beRepaired(UINT_MAX);
 	clap_trap2.beRepaired(UINT_MAX);
 
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.set_attack_damage(3);
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+	clap_trap1.attack("aaa");
+
 	return (0);
 }
