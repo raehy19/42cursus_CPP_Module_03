@@ -69,18 +69,16 @@ ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {
 
 // Scav Behavior
 void ScavTrap::guardGate() {
+	std::string name = this->get_name();
+
 	if (this->get_energy_points() > 0 && this->get_hit_points() > 0) {
 		std::cout << "ScavTrap Gate keeper mode activated ("
-				  << temp << ")"
+				  << name << ")"
 				  << std::endl;
 		set_energy_points((this->get_energy_points()) - 1);
 		return;
 	}
-
-	std::string temp = this->get_name();
 	std::cout << "ScavTrap can't activate Gate keeper mode ("
-			  << temp << ")"
+			  << name << ")"
 			  << std::endl;
-
 }
-
