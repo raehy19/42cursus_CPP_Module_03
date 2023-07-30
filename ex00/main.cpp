@@ -10,12 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "ClapTrap.hpp"
+
+void print_info(ClapTrap &robot) {
+	std::string temp_name = robot.get_name();
+	unsigned int temp_hit_points = robot.get_hit_points();
+	unsigned int temp_energy_points = robot.get_energy_points();
+	unsigned int temp_attack_damage = robot.get_attack_damage();
+
+	std::cout << "====info===="
+			  << std::endl
+			  << "name          : "
+			  << temp_name
+			  << std::endl
+			  << "hit points    : "
+			  << temp_hit_points
+			  << std::endl
+			  << "energy points : "
+			  << temp_energy_points
+			  << std::endl
+			  << "attack damge  : "
+			  << temp_attack_damage
+			  << std::endl
+			  << "============"
+			  << std::endl;
+}
 
 int main(void) {
 	ClapTrap clap_trap1("CL4P-TP");
 	ClapTrap clap_trap2("C");
+	ClapTrap copy_clap1(clap_trap1);
+
+	print_info(clap_trap1);
+	print_info(clap_trap2);
+	print_info(copy_clap1);
 
 	clap_trap1.attack("C");
 
