@@ -39,7 +39,7 @@ int main(void) {
 	clap_trap1.attack("aaa");
 	clap_trap1.attack("aaa");
 	clap_trap1.attack("aaa");
-	clap_trap1.attack("aaa");
+	clap_trap1.beRepaired(10);
 
 	return (0);
 }

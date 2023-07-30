@@ -62,49 +62,49 @@ ClapTrap::ClapTrap(const std::string name) :
 // Set
 void ClapTrap::set_name(std::string name) {
 	this->_name = name;
-	std::cout << "ClapTrap Set Name :"
+	std::cout << "ClapTrap Set Name : "
 			  << this->_name
 			  << std::endl;
 };
 
 void ClapTrap::set_hit_points(unsigned int hit_points) {
 	this->_hit_points = hit_points;
-	std::cout << "ClapTrap Set hit points :"
+	std::cout << "ClapTrap Set hit points : "
 			  << this->_hit_points
 			  << std::endl;
 }
 
 void ClapTrap::set_energy_points(unsigned int energy_points) {
 	this->_energy_points = energy_points;
-	std::cout << "ClapTrap Set energy points :"
+	std::cout << "ClapTrap Set energy points : "
 			  << this->_energy_points
 			  << std::endl;
 }
 
 void ClapTrap::set_attack_damage(unsigned int attack_damage) {
 	this->_attack_damage = attack_damage;
-	std::cout << "ClapTrap Set attack damage :"
+	std::cout << "ClapTrap Set attack damage : "
 			  << this->_attack_damage
 			  << std::endl;
 }
 
 // Get
 std::string ClapTrap::get_name(void) const {
-	std::cout << "ClapTrap Get name :"
+	std::cout << "ClapTrap Get name : "
 			  << this->_name
 			  << std::endl;
 	return (this->_name);
 }
 
 unsigned int ClapTrap::get_hit_points(void) const {
-	std::cout << "ClapTrap Get hit points :"
+	std::cout << "ClapTrap Get hit points : "
 			  << this->_hit_points
 			  << std::endl;
 	return (this->_hit_points);
 }
 
 unsigned int ClapTrap::get_energy_points(void) const {
-	std::cout << "ClapTrap Get energy points :"
+	std::cout << "ClapTrap Get energy points : "
 			  << this->_energy_points
 			  << std::endl;
 	return (this->_energy_points);
