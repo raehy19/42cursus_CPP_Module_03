@@ -47,6 +47,14 @@ int main(void) {
 	print_info(copy_frag1);
 	print_info(no_name3);
 
+	frag_trap1.attack("F");
+	frag_trap2.takeDamage(frag_trap1.get_attack_damage());
+
+	frag_trap2.attack("F_R_A_G");
+	frag_trap2.takeDamage(frag_trap2.get_attack_damage());
+
+	frag_trap1.beRepaired(100);
+
 	frag_trap1.highFiveGuys();
 	print_info(frag_trap1);
 

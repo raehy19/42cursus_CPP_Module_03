@@ -40,10 +40,11 @@ int main(void) {
 	ClapTrap clap_trap1("CL4P-TP");
 	ClapTrap clap_trap2("C");
 	ClapTrap copy_clap1(clap_trap1);
+	ClapTrap no_name1;
 
 	print_info(clap_trap1);
-	print_info(clap_trap2);
 	print_info(copy_clap1);
+	print_info(no_name1);
 
 	clap_trap1.attack("C");
 
@@ -52,9 +53,13 @@ int main(void) {
 	clap_trap2.takeDamage(clap_trap1.get_attack_damage());
 
 	clap_trap1.takeDamage(5);
+
 	clap_trap1.beRepaired(100);
+
 	clap_trap1.takeDamage(UINT_MAX);
+
 	clap_trap1.beRepaired(UINT_MAX);
+
 	clap_trap2.beRepaired(UINT_MAX);
 
 	clap_trap1.attack("aaa");
@@ -66,8 +71,8 @@ int main(void) {
 	clap_trap1.attack("aaa");
 	clap_trap1.attack("aaa");
 	clap_trap1.attack("aaa");
-	clap_trap1.attack("aaa");
 	clap_trap1.beRepaired(10);
+	clap_trap1.attack("zzz");
 
 	return (0);
 }

@@ -189,6 +189,6 @@ void ClapTrap::beRepaired(unsigned int amount) {
 	}
 	std::cout << "ClapTrap "
 			  << this->_name
-			  << " can't be repaired"
+			  << " can't be repaired."
 			  << std::endl;
 }

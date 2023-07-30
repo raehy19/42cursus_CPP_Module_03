@@ -46,11 +46,16 @@ int main(void) {
 	print_info(copy_scav1);
 	print_info(no_name2);
 
+	scav_trap1.attack("S");
+	scav_trap2.takeDamage(scav_trap1.get_attack_damage());
+
+	scav_trap2.attack("SC4V-TP");
+	scav_trap2.takeDamage(scav_trap2.get_attack_damage());
+
+	scav_trap1.beRepaired(100);
+
 	scav_trap1.guardGate();
 	print_info(scav_trap1);
-
-	scav_trap2.takeDamage(1);
-	scav_trap2.attack("aa");
 
 	return (0);
 }
