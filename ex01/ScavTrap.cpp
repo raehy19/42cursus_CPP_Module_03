@@ -68,6 +68,28 @@ ScavTrap::ScavTrap(const std::string name) : ClapTrap(name) {
 }
 
 // Scav Behavior
+void ScavTrap::attack(const std::string &target) {
+	std::string name = this->get_name();
+	unsigned int damage = this->get_attack_damage();
+
+	if (this->get_energy_points() > 0 && this->get_hit_points() > 0) {
+		std::cout << "ScavTrap "
+				  << name
+				  << " attacks "
+				  << target
+				  << " causing "
+				  << damage
+				  << " points of damage!"
+				  << std::endl;
+		set_energy_points((this->get_energy_points()) - 1);
+		return;
+	}
+	std::cout << "ScavTrap "
+			  << name
+			  << " can't attack."
+			  << std::endl;
+}
+
 void ScavTrap::guardGate() {
 	std::string name = this->get_name();
 

@@ -83,8 +83,8 @@ int main(void) {
 //	scav_trap1.guardGate();
 //	print_info(scav_trap1);
 
-	FragTrap frag_trap1("SC4V-TP");
-	FragTrap frag_trap2("S");
+	FragTrap frag_trap1("F_R_A_G");
+	FragTrap frag_trap2("F");
 	FragTrap copy_frag1(frag_trap1);
 	FragTrap no_name3;
 
@@ -94,6 +94,9 @@ int main(void) {
 
 	frag_trap1.highFiveGuys();
 	print_info(frag_trap1);
+
+	frag_trap1.attack("XXXXXX");
+	frag_trap2.attack("XXXXXX");
 
 	return (0);
 }

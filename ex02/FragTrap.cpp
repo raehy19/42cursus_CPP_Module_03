@@ -68,6 +68,29 @@ FragTrap::FragTrap(const std::string name) : ClapTrap(name) {
 }
 
 // Frag Behavior
+void FragTrap::attack(const std::string &target) {
+	std::string name = this->get_name();
+	unsigned int damage = this->get_attack_damage();
+
+	if (this->get_energy_points() > 0 && this->get_hit_points() > 0) {
+		std::cout << "FragTrap "
+				  << name
+				  << " attacks "
+				  << target
+				  << " causing "
+				  << damage
+				  << " points of damage!"
+				  << std::endl;
+		set_energy_points((this->get_energy_points()) - 1);
+		return;
+	}
+	std::cout << "FragTrap "
+			  << name
+			  << " can't attack."
+			  << std::endl;
+}
+
+
 void FragTrap::highFiveGuys() {
 	std::string name = this->get_name();
 

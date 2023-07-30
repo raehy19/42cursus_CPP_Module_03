@@ -82,5 +82,8 @@ int main(void) {
 	scav_trap1.guardGate();
 	print_info(scav_trap1);
 
+	scav_trap2.takeDamage(1);
+	scav_trap2.attack("aa");
+
 	return (0);
 }
