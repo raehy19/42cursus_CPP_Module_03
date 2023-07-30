@@ -27,11 +27,32 @@ public:
 	// Orthodox Canonical Form
 	ClapTrap();
 
-	ClapTrap(const ClapTrap &clap_trap)
+	ClapTrap(const ClapTrap &clap_trap);
 
 	ClapTrap &operator=(const ClapTrap &clap_trap);
 
 	~ClapTrap();
+
+	// Additional Constructor
+	ClapTrap(const std::string name);
+
+	// Set
+	void set_name(std::string name);
+
+	void set_hit_points(unsigned int hit_points);
+
+	void set_energy_points(unsigned int energy_points);
+
+	void set_attack_damage(unsigned int attack_damage);
+
+	// Get
+	std::string get_name(void) const;
+
+	unsigned int get_hit_points(void) const;
+
+	unsigned int get_energy_points(void) const;
+
+	unsigned int get_attack_damage(void) const;
 
 	// Behavior
 	void attack(const std::string &target);
