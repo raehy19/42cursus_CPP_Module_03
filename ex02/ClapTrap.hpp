@@ -55,7 +55,7 @@ public:
 	unsigned int get_attack_damage(void) const;
 
 	// Behavior
-	void attack(const std::string &target);
+	virtual void attack(const std::string &target);
 
 	void takeDamage(unsigned int amount);
 

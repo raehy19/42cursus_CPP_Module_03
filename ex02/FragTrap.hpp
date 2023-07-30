@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #pragma once
 #ifndef FRAG_TRAP_HPP
 #define FRAG_TRAP_HPP
@@ -32,7 +31,7 @@ public:
 	// Additional Constructor
 	FragTrap(const std::string name);
 
-	void attack(const std::string &target);
+	virtual void attack(const std::string &target);
 
 	// Frag Behavior
 	void highFiveGuys(void);

@@ -31,7 +31,7 @@ public:
 	// Additional Constructor
 	ScavTrap(const std::string name);
 
-	void attack(const std::string &target);
+	virtual void attack(const std::string &target);
 
 	// Scav Behavior
 	void guardGate(void);
